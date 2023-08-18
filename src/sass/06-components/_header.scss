@@ -1,0 +1,131 @@
+:root{
+    --header-height: 70px;
+    --header-logo-height: 40px;
+    --menu-spacing: 40px;
+}
+
+.header{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    transform: translate3d(0, 0, 0);
+    // box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+
+    &__inner{
+
+        .container{
+            display: flex;
+            align-items: center;
+            height: var(--header-height);
+        }
+    }
+
+    &__logo{
+
+        img{
+            height: var(--header-logo-height);
+        }
+    }
+
+    &__nav{
+        margin-left: auto;
+
+        ul{
+            display: flex;
+            align-items: center;
+        }
+
+        li{
+            margin-right: var(--menu-spacing);
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+
+        a{
+            display: block;
+            line-height: var(--header-height);
+
+            &:hover{
+
+            }
+
+            &.is-active{
+
+            }
+        }
+    }
+
+    &__expander{
+        @include reset-button;
+        display: none;
+        margin-left: auto;
+        margin-right: calc(var(--container-padding) * -1);
+
+        .hamburger{
+            --hamburger-px: var(--container-padding);
+            height: var(--header-height);
+        }
+    }
+
+    // Expanded
+    &.is-expanded{
+        @extend .hamburger.is-active;
+    }
+
+    & ~ .content-wrapper{
+        --content-wrapper-pt: var(--header-height);
+    }
+}
+
+
+// ================================================
+//                  MEDIA QUERIES
+// ================================================
+/* @include bp(md){
+    :root{
+        --header-height: 70px;
+    }
+
+    .header{
+
+        &__nav{
+            display: none;
+            position: absolute;
+            top: var(--header-height);
+            left: 0;
+            width: 100%;
+            max-height: calc(100vh - var(--header-height));
+            overflow: auto;
+            background-color: var(--light);
+
+            ul{
+                display: block;
+            }
+
+            li{
+                display: block;
+                margin-right: 0;
+            }
+
+            a{
+                display: block;
+                width: 100%;
+                text-align: center;
+                line-height: 60px;
+
+                &:hover{
+
+                }
+            }
+        }
+
+        &__expander{
+            display: block;
+        }
+    }
+} */
