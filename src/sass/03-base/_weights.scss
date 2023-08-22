@@ -1,0 +1,19 @@
+
+@mixin medium{
+    font-weight: var(--font-medium);
+}
+
+@mixin bold{
+    font-weight: var(--font-bold);
+}
+
+
+
+
+.text-medium {
+    @include medium;
+}
+
+.text-bold {
+    @include bold;
+}

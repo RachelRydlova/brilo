@@ -28,6 +28,7 @@
 @import "03-base/base";
 @import "03-base/typography";
 @import "03-base/formatting";
+@import "03-base/weights";
 
 // VENDOR
 // @import "04-vendor/animate";
@@ -48,7 +49,6 @@
 // COMPONENTS
 @import "06-components/ratio";
 @import "06-components/cookie-bar";
-// @import "06-components/studio9";
 @import "06-components/icons";
 // @import "06-components/alerts";
 @import "06-components/buttons";
@@ -56,6 +56,9 @@
 @import "06-components/hamburger";
 @import "06-components/header";
 @import "06-components/footer";
+@import "06-components/text-img";
+@import "06-components/headline";
+@import "06-components/cards";
 
 // PAGES
 // @import "07-pages/homepage";

@@ -1,7 +1,7 @@
 $css-vars: (
     base: (
         // Typography
-        --font: "-apple-system, BlinkMacSystemFont, 'Avenir Next', Avenir, 'Nimbus Sans L', Roboto, Noto, 'Segoe UI', Arial, Helvetica, 'Helvetica Neue', sans-serif",
+        --font: "Montserrat, sans-serif",
         --font-secondary: var(--font),
 
         --font-size: 16px,
@@ -9,26 +9,32 @@ $css-vars: (
         --paragraph-spacing: 1.5rem,
 
         --font-size-sm: 14px,
+        --font-size-md: 16px,
         --font-size-lg: 18px,
 
+        --font-medium: 500,
+        --font-bold: 700,
+
         --h0: 60px,
-        --h1: 40px,
-        --h2: 30px,
-        --h3: 25px,
+        --h1: 48px,
+        --h2: 32px,
+        --h3: 24px,
         --h4: 20px,
-        --h5: 16px,
-        --h6: 14px,
 
 
         // Colors
         --color: #000,
         --bg-color: #fff,
 
-        --primary: #0079bf,
-        --primary-dark: #{darken(#0079bf, 10)},
+        --primary: #00065B,
+        --primary-100: #E7F0FF,
+        --primary-300: #7387AC,
+        --primary-400: #5F7AFF,
+        --primary-500: #264AFB,
 
-        --secondary: #b00400,
-        --secondary-dark: #{darken(#b00400, 10)},
+        --secondary: #009E61,
+        --secondary-400: #06EB83,
+        --secondary-500: #01D684,
 
         --light: #f2f2f2,
         --dark: #212529,
@@ -75,5 +81,6 @@ $css-vars: (
     ),
     xs: (
         --section-padding: 60px,
+        --container-padding: 15px,
     )
 ) !default;

@@ -1,13 +1,11 @@
 # Brilo demo wepbage
-# demo FE from figma https://www.figma.com/file/63rrLEozuwDRmFQxQOvfaK/%C3%9Akol-pro-uchaze%C4%8De?type=design&node-id=0-1&mode=design&t=MMbMfUqikfuD5JEu-0
-# used BEM naming
+demo FE from figma https://www.figma.com/file/63rrLEozuwDRmFQxQOvfaK/%C3%9Akol-pro-uchaze%C4%8De?type=design&node-id=0-1&mode=design&t=MMbMfUqikfuD5JEu-0
+used BEM naming
 
 **Table of Contents**
 
-- [Quick start](#quick-start)
-- [Configuration](#configuration)
 - [Requirements](#requirements)
-- [Changelog](CHANGELOG.md)
+- [Quick start](#quick-start)
 
 ## Requirements
 

@@ -23,14 +23,14 @@
         }
     }
 
-    /* &.bg-primary{
-        --section-bg: var(--primary);
-        color: #fff;
+    &.bg-primary-100{
+        --section-bg: var(--primary-100);
+        color: var(--primary);
 
         & + &{
             margin-top: calc(var(--section-padding) * -1);
         }
-    } */
+    }
 
     /* &.border-top{
         margin-top: 0 !important;

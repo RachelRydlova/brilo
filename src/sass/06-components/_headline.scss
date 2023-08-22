@@ -1,0 +1,28 @@
+.headline {
+    margin: 0 auto;
+    max-width: 58rem;
+    text-align: center;
+    color: var(--primary);
+
+    &__tags {
+        padding-top: calc(var(--section-padding)/2);
+        display: flex;
+        column-gap: 1rem;
+        justify-content: center;
+    }
+}
+
+
+
+// ================================================
+//                  MEDIA QUERIES
+// ================================================
+@include bp(sm){
+
+    .headline {
+        &__tags {
+            flex-direction: column;
+            row-gap: .3rem;
+        }
+    }
+}

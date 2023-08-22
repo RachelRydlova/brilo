@@ -8,7 +8,7 @@ var header = (function() {
         options: {
             expandedClass: 'is-expanded',
             scrolledClass: 'is-scrolled',
-            mobileBreakpoint: 'md',
+            mobileBreakpoint: 'sm',
             speed: 300
         }
     };

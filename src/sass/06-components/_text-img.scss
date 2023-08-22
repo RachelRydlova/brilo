@@ -1,0 +1,62 @@
+.text-img {
+
+
+    &__wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        color: var(--primary);
+        max-width: 43rem;
+
+        p {
+            @include text-md;
+            line-height: 150%;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 1rem;
+        }
+    }
+
+    &__actions {
+        margin-top: 3rem;
+        display: flex;
+        column-gap: 1rem;
+    }
+}
+
+
+
+// ================================================
+//                  MEDIA QUERIES
+// ================================================
+@include bp(md){
+
+    .text-img {
+        &__actions {
+            margin-top: 1rem;
+        }
+    }
+
+}
+
+@include bp(xs){
+
+    .text-img {
+
+        h1 {
+            line-height: 100%;
+            font-size: em(40);
+        }
+
+        &__actions {
+            flex-direction: column;
+
+            a {
+                margin-bottom: .5rem;
+            }
+        }
+    }
+
+}

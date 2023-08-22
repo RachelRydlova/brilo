@@ -7,7 +7,7 @@ define('STYLES_DIR', 'public/css');
 define('SCRIPTS_DIR', 'public/js');
 define('IMAGES_DIR', 'public/images');
 
-define('SITE_TITLE', 'Test');
+define('SITE_TITLE', 'Brilo');
 define('SITE_DESCRIPTION', '');
 define('DEFAULT_SKIN', '');
 

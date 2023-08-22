@@ -31,6 +31,11 @@
     <!-- CSS -->
     <link href="<?php echo STYLES_DIR; ?>/style.css?ver=<?php echo VERSION; ?>" rel="stylesheet">
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
     <!-- TRACKING CODES HERE -->
 
 </head>
@@ -45,14 +50,37 @@
 
             <div class="header__logo">
                 <a href="#">
-                    <img src="URL" alt="">
+                    <img src="./public/images/logo.svg" alt="">
                 </a>
             </div>
 
             <nav class="menu header__nav">
                 <ul>
-                    <li><a href="#">ITEM1</a></li>
-                    <li><a class="is-active" href="#">ITEM2</a></li>
+                    <li><a href="#">O nás</a></li>
+                    <li>
+                        <a class="has-submenu" href="#">Služby</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="">submenu</a></li>
+                                <li>
+                                    <a href="#" class="has-sub-submenu">submenu</a>
+                                    <div class="sub-submenu">
+                                        <ul>
+                                            <li><a href="">Submenu</a></li>
+                                            <li><a href="">Submenu</a></li>
+                                            <li><a href="">Submenu</a></li>
+                                            <li><a href="">Submenu</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="">submenu</a></li>
+                                <li><a href="">submenu</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Aktuality</a></li>
+                    <li><a href="#">Novinky</a></li>
+                    <li><a href="#">Kontakty</a></li>
                 </ul>
             </nav>
 
